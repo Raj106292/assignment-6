@@ -23,6 +23,128 @@
         </nav>
         <!-- nav bar section end -->
     </header>
-    <h1>This is a blog section</h1>
+    <section class="container">
+        <h3>Some Question Answer of ES6 components</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        What is the difference between var, let and const?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>var</strong>:
+                            var is keyword which use to declare a variable. 'var' keyword is not suitable so much for
+                            high
+                            level program. 'var' keyword allow programmer to reassign the value of the variable and also
+                            reuse the variable name again and again. programmer can declare var variable without
+                            initialization.
+                        </p>
+
+                        <p>
+                            <strong>let</strong>:
+                            let keyword is also same as var but has some special feature which makes a program so much
+                            readable and efficient. let keyword allows programmers to reassign the value but not allow
+                            to
+                            reuse the variable name again and again. without initialization programmer can't declare a
+                            let
+                            veriable
+                        </p>
+
+                        <p>
+                            <strong>const</strong>:
+                            const keyword is totally different from the let and var keyword. const is a variable which
+                            contains a constant variable. After a programmer declare a variable with const keyword no
+                            one
+                            can reassign the value of the variable and also no one can can use the same variable name
+                            again
+                            and again.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        What is the difference between Arrow function and Regular function?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            There are <strong>5 differenences</strong> between arrow function and regular function. They are:
+                            <ol>
+                                <li>Syntax Difference</li>
+                                <li>Arguments Binding Difference</li>
+                                <li>Difference of "this" value</li>
+                                <li>Difference of using new keyword</li>
+                                <li>Difference of using Duplicate Parameter</li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What is the difference between map, forEach, filter, find?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>array.map</strong>:
+                            find all value from the array and do the operation on the value and store the new value into
+                            a new array. (array.map) returns the result without typing return.
+                        </p>
+                        <p>
+                            <strong>array.forEach</strong>:
+                            the work of forEach is same as (array.map). The difference is: forEach don't return anything
+                            just console.log work in forEach
+                        </p>
+                        <p>
+                            <strong>array.filter</strong>:
+                            (array.filter) has a condition and it's find out the values from the array which fullfil the
+                            condition and return them all
+                        </p>
+                        <p>
+                            <strong>array.find</strong>:
+                            (array.filter) has a condition and it's find out the only first value from the array which
+                            fullfil the condition and return only the value
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Why should we use Template String?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                            Template strings are a powerful feature of modern JavaScript released in ES6. It lets us
+                            insert/interpolate variables and expressions into strings without needing to concatenate
+                            like in older versions of JavaScript. It allows us to create strings that are complex and
+                            contain dynamic elements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
