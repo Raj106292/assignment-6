@@ -32,12 +32,7 @@ const DisplayCatagoriesData = (catagories) => {
     console.log(catagories);
     const catagoryDetailsContainer = document.getElementById('catagory-details');
     catagoryDetailsContainer.innerHTML = ' ';
-    if(catagories.length === 0){
-        catagoryDetailsContainer.innerText = 'No Data Found';
-    }
-    else{
-        catagoryDetailsContainer.innerText = catagories.length + ' Data Found';
-    }
+    
     toggleSpinner(false);
     catagories.forEach(catagory => {
         // console.log(catagory);
