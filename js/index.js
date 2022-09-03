@@ -32,11 +32,12 @@ const DisplayCatagoriesData = (catagories) => {
     console.log(catagories);
     const catagoryDetailsContainer = document.getElementById('catagory-details');
     catagoryDetailsContainer.innerHTML = ' ';
+    const newsNumberField = document.getElementById('news-number');
     if(catagories.length === 0){
-        catagoryDetailsContainer.innerText = 'No Data Found';
+        newsNumberField.value = 'No Data Found';
     }
     else{
-        catagoryDetailsContainer.innerText = catagories.length + ' Data Found';
+        newsNumberField.value = catagories.length + ' Data Found';
     }
     toggleSpinner(false);
     catagories.forEach(catagory => {
