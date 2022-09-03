@@ -31,7 +31,7 @@ const loadCatagoriesData = (catagoryId) => {
     .catch(error => console.log(error))
 }
 const DisplayCatagoriesData = (catagories) => {
-    console.log(catagories);
+    // console.log(catagories);
     const catagoryDetailsContainer = document.getElementById('catagory-details');
     catagoryDetailsContainer.innerHTML = ' ';
     const newsNumberField = document.getElementById('news-number');
@@ -42,6 +42,9 @@ const DisplayCatagoriesData = (catagories) => {
         newsNumberField.value = catagories.length + ' Data Found';
     }
     toggleSpinner(false);
+    catagories.sort(function(a, b) {
+        return b.total_view - a.total_view;
+    });
     catagories.forEach(catagory => {
         // console.log(catagory);
         const detailsDiv = document.createElement('div');
